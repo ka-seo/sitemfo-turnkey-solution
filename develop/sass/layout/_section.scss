@@ -1,0 +1,53 @@
+.section {
+
+  $sec-padding-top: 70px;
+
+  & + .section {
+    padding-top: $sec-padding-top;
+
+    &--icon {
+      padding-left: 50px;
+      background-repeat: no-repeat;
+      background-position: 0 $sec-padding-top;
+    }
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1.875rem;
+
+    @media (min-width: $breakpoint-sm) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__content {
+    color: #444;
+    font-weight: 300;
+    line-height: 1.625rem;
+
+
+
+    p {
+      &:first-child { margin-top: 0;}
+      &:last-child { margin-bottom: 0;}
+    }
+  }
+
+  &--icon {
+    padding-left: 50px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+
+  @media (max-width: $breakpoint-md) {
+    &#contacts {
+      .section__content {
+        margin-left: -50px;
+      }
+    }
+  }
+}

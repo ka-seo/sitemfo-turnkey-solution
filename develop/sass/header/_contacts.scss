@@ -1,0 +1,92 @@
+.contact {
+  padding-top: 8px;
+
+  &s {
+    position: relative;
+    margin: 30px 0;
+
+    &:after {
+      content: '';
+      display: none;
+      width: 1px;
+      height: 100%;
+      background: #eee;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      &:after {
+        display: block;
+      }
+    }
+
+    @media (min-width: $breakpoint-lg) and (max-width: 1100px) {
+      float: none;
+      display: block;
+      clear: both;
+      margin-right: 0 !important;
+      padding-right: 0 !important;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      padding-right: 20px;
+      margin: 0 20px 0 0;
+    }
+    @media (min-width: $breakpoint-xl) {
+      margin-right: 25px;
+      padding-right: 25px;
+    }
+    @media (min-width: $breakpoint-xxl) {
+      margin-right: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  &-item {
+    display: inline-block;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-position: 0 10px;
+
+    padding-left: 32px;
+    padding-top: 11px;
+    min-height: 2.1875rem;;
+
+    font-size: .875rem;
+
+    a {
+      color: $color-base !important;
+      text-decoration: none;
+    }
+
+
+    @media (min-width: $breakpoint-lg) {
+      font-size: .875rem;
+    }
+
+    @media (min-width: 1300px) {
+      font-size: 1rem;
+    }
+
+
+    &--address {}
+    &--phone {
+      @media (min-width: $breakpoint-lg) {
+        margin-left: 20px;
+      }
+      @media (min-width: $breakpoint-xl) {
+        margin-left: 25px;
+      }
+      @media (min-width: $breakpoint-xxl) {
+        margin-left: 40px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,30 @@
+@import "../header/logo";
+@import "../header/contacts";
+@import "../components/responsive-menu";
+
+
+.header {
+  width: 100%;
+  margin-bottom: 4rem;
+  @include clearfix;
+
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: 5rem;
+  }
+
+  &--home {
+    margin-bottom: 1.25rem;
+
+    @media (min-width: $breakpoint-md) {
+      margin-bottom: 1.8125rem;
+    }
+  }
+
+  &__left {
+    float: left;
+  }
+
+  &__right {
+    float: right;
+  }
+}

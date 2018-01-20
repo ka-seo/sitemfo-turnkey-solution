@@ -1,0 +1,79 @@
+.finevision-white {
+
+  div, p, ol, ul, li {
+    &.finevision-white {
+      line-height: 20px !important;
+    }
+  }
+
+  &.cover {
+    display: block !important;
+
+    &__inner {
+      display: block !important;
+    }
+  }
+
+  &.btn {
+    background: #000 !important;
+    color: #fff !important;
+
+    &:hover {
+      background-color: #000 !important;
+      color: #fff !important;
+    }
+  }
+
+  &.tab {
+    &:hover,
+    &.active {
+      border-bottom-color: #000 !important;
+    }
+  }
+
+  &.slider {
+    .irs-line {
+      background: #999 !important;
+    }
+    .irs-line-left,
+    .irs-bar {
+      background: #000 !important;
+    }
+    .irs-single {
+      color: #000 !important;
+    }
+  }
+
+  &.menu-trigger__line {
+    background-color: #000 !important;
+  }
+
+  &.form__input {
+    border: 1px solid #000;
+
+    &.error {
+      border-color: #fb001c;
+    }
+  }
+
+  &.form__checkbox ~ label &.chbox_cell &.chbox_bd {
+    border-color: #000;
+
+    &:before {
+      width: 9px;
+      height: 7px;
+      top: 7px;
+      left: 6px;
+      background-image: url('#{$img}/checkbox-black.svg') !important;
+    }
+  }
+
+  &.point-item.active {
+    background-color: #eee !important;
+
+    > .finevision-white {
+      background-color: transparent !important;
+    }
+  }
+
+}

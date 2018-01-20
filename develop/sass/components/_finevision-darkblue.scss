@@ -1,0 +1,84 @@
+.finevision-darkblue {
+
+  div, p, ol, ul, li {
+    &.finevision-darkblue {
+      line-height: 20px !important;
+    }
+  }
+
+  &.contact-item a {
+    color: yellow!important;
+  }
+
+  &.cover {
+    display: block !important;
+
+    &__inner {
+      display: block !important;
+    }
+  }
+
+  &.btn {
+    background: yellow !important;
+    color: darkblue !important;
+
+    &:hover {
+      background-color: yellow !important;
+      color: darkblue !important;
+    }
+  }
+
+  &.tab {
+    &:hover,
+    &.active {
+      border-bottom-color: yellow !important;
+    }
+  }
+
+  &.slider {
+    .irs-line {
+      background: #999 !important;
+    }
+    .irs-line-left,
+    .irs-bar {
+      background: yellow !important;
+    }
+    .irs-single {
+      color: yellow !important;
+    }
+  }
+
+  &.menu-trigger__line {
+    background-color: yellow !important;
+  }
+
+  &.form__input {
+    border: 1px solid yellow;
+    //color: yellow;
+
+    &.error {
+      border-color: #a90202;
+    }
+  }
+
+  &.form__checkbox ~ label &.chbox_cell &.chbox_bd {
+    border-color: yellow;
+
+    &:before {
+      width: 9px;
+      height: 7px;
+      top: 7px;
+      left: 6px;
+      background: yellow !important;
+    }
+  }
+
+  &.point-item.active {
+    background-color: #23348b !important;
+
+    > .finevision-darkblue {
+      background-color: transparent !important;
+    }
+  }
+
+}

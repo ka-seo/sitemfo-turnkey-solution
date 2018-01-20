@@ -1,0 +1,7 @@
+$color-base: #1d1d1d;
+$color-primary: #51D85F;
+$color-secondary: #FF9908;
+
+$color-link: $color-primary;
+$img: '../img';
+$color-link-hover: lighten($color-link, .2);

@@ -1,0 +1,28 @@
+.logo {
+  @media (min-width: $breakpoint-lg) {
+    position: relative;
+    top: 7px;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+  }
+
+  &__badge {
+    color: #292929;
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      color: #292929;
+    }
+
+    .highlight {
+      color: $color-primary;
+      font-weight: 700;
+    }
+  }
+}

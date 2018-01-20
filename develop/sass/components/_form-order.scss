@@ -1,0 +1,183 @@
+/********************************************
+  FORM ANKETA // QUESTIONNAIRE
+********************************************/
+
+$input-disabled-color: $color-secondary;
+$input-disabled-border: $color-secondary;
+$input-focus-color: $color-primary;
+
+.form {
+  margin: 45px auto 0;
+  max-width: 710px;
+  //border: 1px solid #ccc;
+
+  &__title {
+    color: #a5a6a6;
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.03rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  &__box {
+    margin: 0 auto;
+    padding: 0;
+
+    & + .form__box {
+      margin-top: 40px;
+    }
+
+    &--act {
+      padding: 0;
+
+      .btn {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &--check {
+      font-size: 0.813rem;
+    }
+
+  }
+
+  &__input {
+    width: 100%;
+    height: 56px;
+    margin: 0;
+    padding: 27px 36px 10px 16px;
+    font-size: 0.938rem;
+    line-height: 1rem;
+    outline: none;
+    border: 0.063rem solid transparent;
+    background-color: #fff;
+    border-radius: 0.188rem;
+    box-shadow: 0 0.188rem 0.313rem rgba(0, 0, 0, 0.04);
+    background-position: right 16px center;
+    background-repeat: no-repeat;
+
+    // Disabled input style
+    &:disabled,
+    &[readonly="readonly"] {
+      color: $input-disabled-color;
+      border-color: $input-disabled-border;
+    }
+
+    // Disabled label style
+    &:disabled+label,
+    &[readonly="readonly"]+label {
+      color: $input-disabled-color;
+    }
+
+    // Focused input style
+    //&:focus:not([readonly]) {
+    //  border-color: transparent;
+    //}
+
+    // Focused label style
+    &:focus:not([readonly])+label {
+      color: $input-focus-color;
+    }
+
+    &.error {
+      border-color: #ff2424;
+      background-image: url('#{$img}/cross.svg');
+      -webkit-background-size: 12px 10px;
+      background-size: 12px 10px;
+    }
+
+    &.valid {
+      background-image: url('#{$img}/check_green.svg');
+      -webkit-background-size: 16px 13px;
+      background-size: 16px 13px;
+    }
+  }
+
+
+
+  &__field {
+    position: relative;
+    margin-bottom: 1.6875rem; //27px || 16px
+
+    &--inline {
+      display: inline-block;
+      vertical-align: middle;
+
+      + * {
+        margin-left: 10px;
+      }
+    }
+
+    span.error {
+      color: #fb001c;
+      font-size: 0.688rem;
+      font-weight: 300;
+      left: 1rem;
+      right: 1rem;
+      top: 3.7rem;
+    }
+
+    //span.error + span.error {
+    //  position: relative;
+    //  top: 19px;
+    //}
+  }
+
+  &__placeholder {
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    top: 1.2rem;
+    line-height: 1;
+    color: #9c9c9c;
+    font-size: .9375rem;
+    transition: all .2s ease-in;
+    pointer-events: none;
+
+    .active & {
+      font-weight: 300;
+      color: #414141;
+      font-size: 0.75rem;
+      top: .65rem
+    }
+  }
+
+  .input-field_text {
+    //width: 80%;
+  }
+
+  span.error,
+  div.error {
+    display: block;
+    position: absolute;
+  }
+
+}
+
+@media (min-width: $breakpoint-md) {
+  .row__three {
+    [class*='col']{
+
+      &:nth-child(1) {
+        padding-right: 0;
+      }
+      &:nth-child(2) {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+      &:nth-child(3) {
+        padding-left: 0;
+      }
+    }
+  }
+}
+//
+//#modal-sign-in {
+//  .form__field {
+//    max-width: 200px;
+//    margin-left: auto;
+//    margin-right: auto;
+//  }
+//}

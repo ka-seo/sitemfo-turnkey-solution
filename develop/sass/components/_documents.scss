@@ -1,0 +1,72 @@
+a[href$='.pdf'],
+a[href$='.doc'],
+a[href$='.docx'],
+a[href$='.djvu'] {
+  &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: auto;
+    font-weight: 700;
+    width: auto;
+    padding: 0 5px 0 0;
+    margin-right: 10px;
+    color: #898989;
+    font-size: .8rem;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+}
+a[href$='.pdf']:before {content: 'PDF';}
+a[href$='.doc']:before,
+a[href$='.docx']:before {content: 'DOC';}
+a[href$='.djvu']:before {content: 'DJVU';}
+
+
+.list-doc {
+  @include clearfix;
+
+  li {
+    border-bottom: 1px solid #E4E4E4;
+    padding-bottom: 16px;
+
+    &:nth-last-child(1) {
+      border-bottom-color: transparent;
+    }
+
+    + li {
+      margin-top: 16px;
+    }
+
+
+    @media (min-width: $breakpoint-lg) {
+      width: 45%;
+      float: left;
+
+      &:nth-child(2) {
+        margin-top: 0;
+      }
+
+      &:nth-child(even) {
+        margin-left: 10%;
+      }
+
+      &:nth-last-child(1),
+      &:nth-last-child(2){
+        border-bottom-color: transparent;
+      }
+    }
+
+  }
+
+  a {
+    display: inline;
+    vertical-align: middle;
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      color: $color-link;
+    }
+  }
+}

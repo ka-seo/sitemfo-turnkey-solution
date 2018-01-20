@@ -1,0 +1,101 @@
+.popup {
+  //font-size: 1rem;
+
+  &__icon {
+    margin: 0 auto 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &.success {
+      background-image: url("#{$img}/thumb-up.svg");
+      -webkit-background-size: 47px 41px;
+      background-size: 47px 41px;
+      width: 47px;
+      height: 41px;
+    }
+  }
+
+  &__center {
+    margin-top: 36px;
+  }
+
+  &__input {
+    width: 100%;
+    height: 2.75rem;
+    margin: 0;
+    text-align: left;
+    padding: .625rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    outline: none;
+    border: 0.063rem solid #f2f2f2;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    border-radius: 0.188rem;
+    box-shadow: none;
+
+    &--inline {
+      width: auto;
+      display: inline-block;
+      vertical-align: middle;
+
+      + * {
+        margin-left: 10px;
+      }
+
+      &.error + .error {
+        position: relative;
+      }
+    }
+
+    + .error {
+      position: absolute;
+      display: block;
+      left: 5px !important;
+      top: 2.7rem !important;
+      text-align: left;
+      width: 105%;
+      right: 0 !important;
+    }
+
+    // Disabled input style
+    &:disabled,
+    &[readonly="readonly"] {
+      color: $input-disabled-color;
+      border-color: $input-disabled-border;
+    }
+
+    // Disabled label style
+    &:disabled+label,
+    &[readonly="readonly"]+label {
+      color: $input-disabled-color;
+    }
+
+    // Focused label style
+    &:focus:not([readonly])+label {
+      color: $input-focus-color;
+    }
+
+    &.error {
+      border-color: #ff2424;
+    }
+
+    &.valid {
+
+    }
+  }
+
+  p {
+    margin: 0;
+
+    + p {
+      margin-top: 1px;
+    }
+  }
+
+  .btn {
+    margin-top: 36px;
+    //font-size: .875rem;
+    padding: 13px 25px;
+  }
+}

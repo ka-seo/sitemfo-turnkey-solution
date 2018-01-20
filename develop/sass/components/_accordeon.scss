@@ -1,0 +1,87 @@
+/********************************************
+ ACCORDION PLUGIN // Jquery plugin paccordion.js
+********************************************/
+.accordion-wrapper {
+  .row {
+    [class*='col'] {
+      &:nth-child(2n+1) {
+        clear: left;
+      }
+
+      @media (min-width: $breakpoint-lg) {
+        padding-right: 40px;
+
+        &:nth-child(even) {
+          padding-right: 0;
+          padding-left: 40px;
+        }
+      }
+    }
+  }
+
+}
+
+
+$arrow-size: 5px;
+
+.ac {
+  &-pane {
+    background: transparent;
+    margin-bottom: 30px;
+    padding:0;
+    border-bottom: 0.063rem solid #E4E4E4;
+
+    &.active {
+
+      .ac-title {
+        color: $color-primary;
+        font-weight: 700;
+        border-color: transparent;
+
+        &:after {
+          border-top: transparent;
+          border-bottom: $arrow-size solid #E4E4E4;
+        }
+      }
+    }
+  }
+
+  &-title {
+    position: relative;
+    display: block;
+    padding: 0 16px 8px 0;
+    line-height: 1.3em;
+    cursor: pointer;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 8px;
+      width: 0;
+      height: 0;
+      border-left: $arrow-size solid transparent;
+      border-right: $arrow-size solid transparent;
+      border-top: $arrow-size solid #E4E4E4;
+    }
+
+    &_triangle {
+
+    }
+  }
+
+  &-content {
+    display: none;
+    position: relative;
+    padding: 0 16px 10px 0;
+    font-size: .85rem;
+    //line-height: 1.45rem;
+    border: 0;
+
+    p {
+      &:first-child { margin-top: 0; }
+      &:last-child { margin-bottom: 0; }
+    }
+  }
+}

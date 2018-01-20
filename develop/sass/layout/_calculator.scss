@@ -1,0 +1,130 @@
+@import "../components/tabs";
+@import "../components/ionRangeSlider";
+
+
+#tabs-loan {
+  max-width: 28.125rem;
+
+  @media (min-width: $breakpoint-lg) {
+    margin: 0 auto;
+  }
+}
+
+
+@media (min-width: $breakpoint-xxl) {
+  html {
+    font-size: 17px;
+  }
+}
+
+.calculate {
+  padding: 0;
+
+  margin: 0;
+  position:relative;
+
+  &__row {
+    @include clearfix;
+
+  & + & {
+    margin-top: 5rem;
+  }
+
+    &.last {
+      margin-top: 2.5rem;
+
+      &:last-child {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+
+  &__output {
+
+  }
+
+  &__button {
+    @include large-btn;
+    float: none;
+    margin: 0;
+    
+    @media (min-width: $breakpoint-lg) {
+      float: right;
+      //margin: 0;
+    }
+  }
+}
+
+.output {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (max-width: $breakpoint-sm) {
+    display: block;
+  }
+
+  &-item {
+    width: 4.6875rem;
+
+    @media (max-width: $breakpoint-sm) {
+      display: inline-block;
+      margin: 0.4375rem 1.25rem 0.4375rem 0;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+
+      &:nth-child(3) {
+        margin-right: 0;
+      }
+
+    }
+  }
+
+  &__title {
+    font-size: 0.813rem;
+    margin-bottom: 0.1875rem;
+  }
+  &__value {
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  $k: .8;
+
+  .calculate {
+
+    &__row {
+
+      & + & {
+        margin-top: 5rem * $k;
+      }
+
+      &.last {
+        margin-top: 3.125rem * $k;
+      }
+    }
+
+  }
+
+  .output {
+
+    &-item {
+      width: 4.6875rem;
+    }
+
+    &__title {
+      font-size: 0.813rem * $k;
+      margin-bottom: 0.1875rem * $k;
+    }
+
+    &__value {
+      //font-size: 1.125rem * $k;
+    }
+  }
+
+}

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Готовое решение - Информация</title>
+
+	<link rel="stylesheet" href="css/styles.min.css?v=0.46">
+	<link rel="stylesheet" href="theme-1/css/theme-1.min.css?v=0.1" title="theme-1">
+	<link rel="stylesheet" href="theme-2/css/theme-2.min.css?v=0.1" title="theme-2">
+	<link rel="stylesheet" href="theme-3/css/theme-3.min.css?v=0.1" title="theme-3">
+	<link rel="stylesheet" href="theme-4/css/theme-4.min.css?v=0.1" title="theme-4">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+
+	<div class="wrapper">
+		<!-- TOP BAR WITH FORM :: start -->
+		<div class="top-bar">
+			<div class="top-bar__text">
+				Хотите такой сайт за <small><strong class="strike"><span>100.000₽</span></strong></small> 49.900 ₽ и 4 дня? Оставьте заявку прямо сейчас!
+			</div>
+			<div class="top-bar__text--mobile">
+				Хочу такой сайт
+			</div>
+			<form action="" id="top-bar-form" class="top-bar__form">
+				<div class="top-bar__form_close">&times;</div>
+				<div class="top-bar__field">
+					<input type="text" name="top_bar_username" class="top-bar__input" placeholder="Ваше имя" required="">
+				</div>
+				<div class="top-bar__field">
+					<input type="tel" name="top_bar_phone" class="top-bar__input" placeholder="Телефон" required="">
+				</div>
+				<div class="top-bar__field">
+					<input type="hidden" name="theme" value="">
+
+					<button class="btn top-bar__button">
+						<span class="default">Хочу сайт МКК</span>
+						<span class="sent" id="sent-1"></span>
+						<span class="loading"><span>.</span><span>.</span><span>.</span></span>
+						<span class="error-send">Ошибка</span>
+					</button>
+					<button class="btn top-bar__button top-bar__button--mobile">
+						<span class="default">Оставить заявку</span>
+						<span class="sent" id="sent-2"></span>
+						<span class="loading"><span>.</span><span>.</span><span>.</span></span>
+						<span class="error-send">Ошибка</span>
+					</button>
+				</div>
+
+			</form>
+		</div>
+		<!-- TOP BAR WITH FORM :: end -->
+
+		<!-- TOP PANEL WITH THEMES :: start-->
+		<div class="top-panel">
+
+			<div class="top-panel__inner">
+				<div class="top-panel__title">Посмотрите яркие примеры реализации готового решения!</div>
+
+				<div class="top-panel__items themes">
+					<div class="theme-item styleswitch" rel="theme-1">
+						<div class="theme-item__img">
+							<img src="img/preview-theme-1.jpg" alt="Статусный">
+						</div>
+						<div class="theme-item__title">Статусный</div>
+					</div>
+
+					<div class="theme-item styleswitch" rel="theme-2">
+						<div class="theme-item__img">
+							<img src="img/preview-theme-2.jpg" alt="Беззаботный">
+						</div>
+						<div class="theme-item__title">Беззаботный</div>
+					</div>
+
+					<div class="theme-item styleswitch" rel="theme-3">
+						<div class="theme-item__img">
+							<img src="img/preview-theme-3.jpg" alt="Предсказуемый">
+						</div>
+						<div class="theme-item__title">Предсказуемый</div>
+					</div>
+
+					<div class="theme-item styleswitch" rel="theme-4">
+						<div class="theme-item__img">
+							<img src="img/preview-theme-4.jpg" alt="Бунтарь">
+						</div>
+						<div class="theme-item__title">Бунтарь</div>
+					</div>
+				</div>
+
+				<a href="//sitemfo.ru" class="top-panel__exit">Выйти <br>из демо-режима</a>
+			</div>
+
+			<div class="top-panel__trigger"><span class="icon-theme"></span><span class="text">Выбрать другую тему</span></div>
+		</div>
+		<!-- TOP PANEL WITH THEMES :: end -->
+
+		<!-- HEADER :: start -->
+		<header id="header" class="header">
+
+			<div class="header__left">
+				<!-- LOGO :: start -->
+				<div class="logo">
+					<a href="index-demo.html">
+						<span class="logo__badge">
+							<span class="highlight">Рядом</span>деньги
+						</span>
+					</a>
+				</div>
+				<!-- LOGO :: end -->
+			</div>
+
+
+			<div class="header__right">
+				<!-- NAVMENU :: start -->
+				<nav class="navmenu" id="nav" role="navigation" data-offset="260">
+
+					<ul class="navmenu__list">
+						<li><a href="info-demo.html">Информация</a></li>
+						<li><a href="#modal-passport" class="btn btn-primary popup-modal">Погасить займ</a></li>
+					</ul>
+
+					<div class="navmenu__contacts contacts">
+
+						<div class="contact-item contact-item--address">
+							Москва, <strong>ул. Большая Казачья, д. 12, о. 301</strong>
+							<div class="text-lg-right"><small><a href="info-demo.html#contacts" class=link-dot>ещё 21 адрес в Москве</a></small></div>
+						</div>
+
+						<div class="contact-item contact-item--phone">
+							<a href="tel:8 800 434 33 33">8 800 434 33 33</a>
+						</div>
+					</div>
+
+					<div class="navmenu__footer">
+
+						<div class="svid">
+							ООО МФО «РЯДОМДЕНЬГИ» св-во №001603935007649 от 22.03.2016 г.
+						</div>
+
+						<div class="developer">
+							Сайт разработали <a href="http://sitemfo.ru/" target="_blank" rel="nofollow">Гуру МФО</a>
+						</div>
+					</div>
+
+					<button type="button" class="close-btn" data-menu="nav"></button>
+				</nav>
+				<!-- NAVMENU :: end -->
+
+				<!-- MENU TRIGGER :: start -->
+				<div class="menu-trigger menu-trigger_header" data-menu="nav">
+					<div class="menu-trigger__line"></div>
+					<div class="menu-trigger__line"></div>
+					<div class="menu-trigger__line"></div>
+				</div>
+				<!-- MENU TRIGGER :: end -->
+
+			</div>
+
+		</header>
+		<!-- HEADER :: end -->
+
+
+		<main role="main" class="wrap">
+			<section id="general" class="section section--icon map-outline">
+				<h1 class="section__title">
+					Выдаём займы в Москве и Московской области
+				</h1>
+				<div class="section__content">
+					<p>Компания РЯДОМДЕНЬГИ создана для активных и целеустремленных людей, идущих к своей цели! Готовых нести ответственность за свои поступки.</p>
+					<p>Но желающих получить что-то здесь и сейчас.</p>
+					<p>Компания РЯДОМДЕНЬГИ создана для активных и целеустремленных людей, идущих к своей цели! Готовых нести ответственность за свои поступки.</p>
+				</div>
+			</section>
+
+			<section id="get-loan" class="section section--icon money">
+				<h1 class="section__title">
+					Как получить займ?
+				</h1>
+				<div class="section__content">
+					<p>Мы выдаем займы наличными в Москве и Московской области гражданам РФ, достигшим возраста 21 года.</p>
+
+					<p><strong>Чтобы получить займ:</strong></p>
+
+					<ol>
+						<li>Заполните <b><a href="anketa-demo.html">анкету</a></b> на нашем сайте.</li>
+						<li>Дождитесь звонка оператора.</li>
+						<li>В случае одобрения придите в один из <b><a href="info-demo.html#contacts">наших офисов</a></b> с паспортом для подписания договора и получения наличных средств.</li>
+					</ol>
+
+				</div>
+			</section>
+
+			<section id="repay-loan" class="section section--icon wallet">
+				<h1 class="section__title">
+					Как погасить займ?
+				</h1>
+				<div class="section__content">
+					<p>Чтобы погасить займ, задите в <b><a href="sign-in-demo.html">Личный кабинет</a></b>, узнайте сумму своего долга и погасите займ там же с помощью карты, или придите в любой из <b><a href="info-demo.html#contacts">наших офисов</a></b> для погашения наличными средствами.</p>
+				</div>
+			</section>
+
+			<section id="products" class="section section--icon pen">
+				<h1 class="section__title">
+					Наши кредитные продукты
+				</h1>
+				<div class="section__content">
+					<h3>Быстрые займы без залога</h3>
+					<p>Здесь описание, какой займ, люди какого возраста подходят, чтобы его взять. Какая процентная ставка по этому займу, какие сроки и диапазоны сумм.</p>
+
+					<h3>Займы под залог до 500.000 ₽</h3>
+					<p>Здесь описание, какой займ, люди какого возраста подходят, чтобы его взять. Какая процентная ставка по этому займу, какие сроки и диапазоны сумм.</p>
+				</div>
+			</section>
+
+			<section id="faq" class="section section--icon question">
+				<h1 class="section__title">
+					Вопрос – ответ
+				</h1>
+				<div class="section__content">
+					<div class="accordion-wrapper">
+						<div class="row">
+
+							<div class="col-lg-6">
+								<div class="ac-pane">
+									<div class="ac-title" data-accordion="true">
+										На телефон не приходит SMS с кодом?
+									</div>
+									<div class="ac-content" style="display: none;">
+										<p>Если Вы не получили SMS  с кодом в течение 10 минут, попробуйте выключить телефон и включить его снова. Если это не помогло, проверьте настройки телефона и баланс. Далее в форме заявки нажмите кнопку «Повторить отправку». Если код по SMS снова не придет, напишите нам на почту
+											<b><a href="mailto:support@rublvam.ru">support@custom-mail.ru</a></b> с указанием Вашего номера телефона и мобильного оператора. </p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-6">
+								<div class="ac-pane">
+									<div class="ac-title" data-accordion="true">
+										Как продлить займ?
+									</div>
+									<div class="ac-content" style="display: none;">
+										<p>Для того чтобы Вы в любое время смогли решить свои финансовые вопросы, мы готовы помогать вам 24/7.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-6">
+								<div class="ac-pane">
+									<div class="ac-title" data-accordion="true">
+										В какое время я могу получить займ?
+									</div>
+									<div class="ac-content" style="display: none;">
+										<p>Легко24 не принимает заявления о предоставлении займа по телефону.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-6">
+								<div class="ac-pane">
+									<div class="ac-title" data-accordion="true">
+										Можно погасить займ досрочно?
+									</div>
+									<div class="ac-content" style="display: none;">
+										<p>После каждого возврата у Вас растет лимит суммы займа.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-6">
+								<div class="ac-pane">
+									<div class="ac-title" data-accordion="true">
+										Могу ли я подать заявление на предоставление займа по телефону?
+									</div>
+									<div class="ac-content" style="display: none;">
+										<p>Вы можете зарегистрироваться в системе с логином и паролем либо с помощью аккаунта в социальной сети. Любой способ действительный, последний же упрощает ваш вход в личный кабинет.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-6">
+								<div class="ac-pane">
+									<div class="ac-title" data-accordion="true">
+										Какие штрафные санкции применяются?
+									</div>
+									<div class="ac-content" style="display: none;">
+										<p>В случае задержки выплат будут ежедневно начисляться проценты за просрочку. При длительном невозврате мы обращаемся в суд РФ</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-6">
+								<div class="ac-pane">
+									<div class="ac-title" data-accordion="true">
+										Могу ли я получить займ на большую сумму с меньшим процентом после успешного первого погашения?
+									</div>
+									<div class="ac-content" style="display: none;">
+										<p>Зайдите в личный кабинет, нажмите «Получить деньги», выберите сумму и срок, подпишите договор при помощи SMS.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-6">
+								<div class="ac-pane">
+									<div class="ac-title" data-accordion="true">
+										Какие есть способы погашения займа?
+									</div>
+									<div class="ac-content" style="display: none;">
+										<p>После подписания договора заявку отменить нельзя. После получения денег Вы можете досрочно погасить займ в личном кабинете или с помощью терминалов «Киви», «Яндекс», «Мандарин». Узнать точную сумму для погашения займа Вы можете в личном кабинете.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="docs" class="section section--icon doc">
+				<h1 class="section__title">
+					Документы МФО
+				</h1>
+				<div class="section__content">
+					<ul class="list-doc">
+						<li><a href="#doc.pdf">Правила предоставления займа</a></li>
+						<li><a href="#doc.pdf">Заявление о предоставлении займа</a></li>
+						<li><a href="#doc.pdf">Соглашение об использовании АСП</a></li>
+						<li><a href="#doc.pdf">Заявление о предоставлении займа</a></li>
+						<li><a href="#doc.pdf">Правила предоставления займа</a></li>
+						<li><a href="#doc.pdf">Заявление о предоставлении займа</a></li>
+						<li><a href="#doc.pdf">Соглашение об использовании АСП</a></li>
+						<li><a href="#doc.pdf">Заявление о предоставлении займа</a></li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="contacts" class="section section--icon phone-outline">
+				<h1 class="section__title">
+					Контакты
+				</h1>
+				<div class="section__content">
+
+					<div class="map">
+						<div class="map__panel">
+							<div class="point-item">
+								<div class="point-item__address goto" data-id="0" data-coords="55.785549, 37.613575">
+									г. Москва, ул. Октябрьская, д.5, оф. 3
+								</div>
+								<a href="tel:8 800 400 23 33" class="point-item__phone">8 800 400 23 33</a>
+							</div>
+
+							<div class="point-item">
+								<div class="point-item__address goto" data-id="1" data-coords="55.785225, 37.612021">
+									г. Москва, Институтский переулок, 10
+								</div>
+								<a href="tel:8 700 400 10 33" class="point-item__phone">8 700 400 10 33</a>
+							</div>
+
+							<div class="point-item">
+								<div class="point-item__address goto" data-id="2" data-coords="55.788831, 37.610294">
+									г. Москва, ул. Образцова, 22
+								</div>
+							</div>
+
+							<div class="point-item">
+								<div class="point-item__address goto" data-id="3" data-coords="55.787187, 37.617805">
+									г. Москва, ул. Советской Армии, 6к2
+								</div>
+							</div>
+
+							<div class="point-item">
+									<div class="point-item__address goto" data-id="4" data-coords="55.783602, 37.599984">
+										г. Москва, Сущёвская улица, 27с3
+									</div>
+								</div>
+						</div>
+
+						<div class="map__container">
+							<div id="Ymap" class="Ymap"></div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="footer">
+			<div class="footer__left">
+				ООО МФО «РЯДОМДЕНЬГИ» св-во №001603935007649 от 22.03.2016 г.
+			</div>
+			<div class="footer__right">
+				Сайт разработали <a href="http://sitemfo.ru" target="_blank" rel="nofollow">«Гуру МФО»</a>
+			</div>
+		</footer>
+	</div><!-- .wrapper -->
+
+	<!-- POPUP PASSPORT :: start -->
+	<div id="modal-passport" class="mpf-popup mpf-popup--small mfp-hide">
+		<div class="popup">
+
+			<p class="font-light text-center">Введите, пожалуйста, свой паспорт и номер договора.</p>
+
+			<form action="#" id="form-passport" class="form-popup form-passport">
+				<div class="form__field">
+					<input name="passport_serial" type="tel" class="popup__input" required="" placeholder="Серия и номер паспорта">
+				</div>
+				<div class="form__field">
+					<input type="text" name="treaty" class="popup__input" required="" placeholder="Номер договора">
+				</div>
+
+				<button class="btn btn-primary">Войти</button>
+			</form>
+		</div>
+	</div>
+	<!-- POPUP PASSPORT:: end -->
+
+	<!-- POPUP SMS :: start -->
+	<div id="modal-sms" class="mpf-popup mpf-popup--small mfp-hide">
+		<div class="popup">
+
+			<p class="font-light text-center">Введите, пожалуйста, СМС-код, который мы отправили на номер <span class="font-regular nowrap insert-phone">+7 917 321 04 84</span></p>
+
+			<form action="#" id="form-sms" class="form-popup form-sms">
+				<div class="form__field">
+					<div class="form__field form__field--inline text-center">
+						<input type="text" name="sms_code" class="popup__input" placeholder="Код из СМС" autocomplete="off">
+					</div>
+					<span class="timer" id="confirm_timer">00:30</span>
+				</div>
+
+				<button class="btn btn-primary">Подтвердить</button>
+				<div class="text-center" style="margin-top: 10px;"><small><button class="resend_code disabled btn-link" disabled>Отправить код еще раз</button></small></div>
+			</form>
+		</div>
+	</div>
+	<!-- POPUP SMS:: end -->
+
+	<!-- POPUP SIGN IN :: start -->
+	<div id="modal-sign-in" class="mpf-popup mpf-popup--small mfp-hide">
+		<div class="popup text-center">
+
+			<p class="font-light">Для входа в личный кабинет введите Ваш мобильный телефон</p>
+
+			<form action="#" id="form-sign-in" class="form-popup form-sign">
+				<div class="form__field">
+					<div class="form__field text-center">
+						<input type="tel" name="phone" id="phone_login" class="popup__input" placeholder="номер вашего телефона" required="">
+					</div>
+				</div>
+
+				<button class="btn btn-primary">Войти</button>
+			</form>
+		</div>
+	</div>
+	<!-- POPUP SIGN IN :: end -->
+
+	<!-- POPUP REPAY LOAN :: start -->
+	<div id="modal-repay" class="mpf-popup mpf-popup--small mfp-hide">
+		<div class="popup text-center">
+
+			<p class="font-light">Вы вошли как</p>
+			<p><strong>Иванов Сергей Иванович</strong></p>
+
+			<div class="popup__center">
+				<p class="font-light">К возврату сегодня</p>
+				<p><strong class="repay-sum">6500,<span>00₽</span></strong></p>
+			</div>
+
+			<button class="btn btn-primary" onclick="location.href='#lk-demo.html'; alert('Погашено! \nИли редирект на другую страницу.');">Погасить сейчас</button>
+			<div class="popup__footer">
+				<ul class="list-cards">
+					<li><img src="img/maestro.png" alt=""></li>
+					<li><img src="img/mc.png" alt=""></li>
+					<li><img src="img/mir.png" alt=""></li>
+					<li><img src="img/visa.png" alt=""></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- POPUP REPAY LOAN :: end -->
+
+	<!-- Common scripts -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/responsive-menu.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.inputmask.min.js"></script>
+	<script src="js/jquery.countdown.min.js"></script>
+	<script src="js/jquery.lazylinepainter-1.5.1.min.js"></script>
+	<script src="js/rAF-polyfil.min.js"></script>
+	<script src="js/common.min.js?v=0.2"></script>
+	<script src="js/styleswitcher.min.js"></script>
+
+	<!-- Specific scripts for current page-->
+	<script src="js/jquery.paccordion.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<script src="js/info.min.js?v=0.22"></script>
+
+</body>
+</html>

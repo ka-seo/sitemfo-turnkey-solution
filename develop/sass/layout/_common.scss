@@ -1,0 +1,160 @@
+@import "../components/demo-panel";
+
+body.dark {
+  background-color: #f8f8f8;
+}
+
+@mixin title {
+  font-family: $font-head;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  line-height: 1.3em;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 40px;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    font-size: 48px;
+  }
+}
+
+@mixin sub-title {
+  font-size: 1.125rem;
+  font-weight: 300;
+  margin-top: 30px;
+  text-align: center;
+  line-height: 1.5em;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 1.125rem;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    font-size: 1.25rem;
+  }
+}
+
+@mixin font-light {
+  font-weight: 300;
+}
+@mixin font-regular {
+  font-weight: 400;
+}
+
+@mixin strike {
+  position: relative;
+
+  > span {
+    color: #fff;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    border-top: 1px solid $color-base;
+    display: inline-block;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+    z-index: 2;
+  }
+}
+
+.strike {@include strike; }
+
+.title { @include title; }
+.sub-title {
+  @include sub-title;
+
+  &--anketa {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+}
+
+.font-light {
+  @include font-light;
+}
+
+.font-regular {
+  @include font-regular;
+}
+
+
+
+.form-popup {
+  text-align: center;
+  margin-top: 36px;
+
+  .form__field {
+    margin: 0 auto;
+  }
+}
+
+.form-sign,
+.form-passport {
+  .form__field {
+    width: 13rem;
+  }
+}
+.form-passport {
+  .form__field + .form__field {
+    margin-top: 1.5rem;
+  }
+}
+
+.form-sms {
+  .popup__input {
+    width: 120px;
+  }
+}
+
+.resend_code {
+  font-size: 0.85rem;
+  //@include font-light;
+}
+
+.timer {
+  color: #9c9c9c;
+  font-size: 0.875rem;
+}
+
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.list-cards {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 5px auto;
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.repay-sum {
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  span {
+    font-size: 1rem;
+  }
+}

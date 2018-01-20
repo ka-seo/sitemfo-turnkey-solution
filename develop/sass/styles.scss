@@ -1,0 +1,34 @@
+@import "variables";
+@import "utilities/bootstrap-grid";
+@import "utilities/flex";
+@import "utilities/mixins";
+@import "general/general";
+@import "helps/helps";
+
+@import "forms/forms";
+
+@import "layout/common";
+@import "layout/header";
+@import "layout/wrapper";
+@import "layout/footer";
+
+
+// home page
+@import "layout/cover";
+@import "layout/calculator";
+
+
+// info page
+@import "layout/section";
+@import "components/accordeon";
+@import "components/documents";
+@import "components/map";
+
+
+//anketa page
+@import "components/form-order";
+@import "components/magnificPopup";
+
+@import "components/finevision-white";
+@import "components/finevision-black";
+@import "components/finevision-darkblue";

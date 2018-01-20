@@ -1,0 +1,245 @@
+.cover {
+  margin: 0 -1.25rem -1.25rem;
+  background-color: #333;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  //-webkit-box-shadow: 0 0 25px 0 rgba(0,0,0,0.40);
+  //-moz-box-shadow: 0 0 25px 0 rgba(0,0,0,0.40);
+  //box-shadow: 0 0 25px 0 rgba(0,0,0,0.40);
+
+
+  @media (min-width: $breakpoint-md) {
+    display: table-row;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  @media (min-width: 540px) and (min-height: 960px) and (min-resolution: 192dpi) {
+    display: table-row;
+    height: 100%;
+    width: 100%;
+  }
+  
+  @media (max-width: $breakpoint-lg) {
+    &__left {
+
+    }
+
+    &__right {
+      //-ms-flex-order: -1;
+      //order: -1;
+      //margin-bottom: 50px;
+    }
+  }
+
+  &__inner {
+    padding: 2.5rem 1.5rem;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      z-index: auto;
+
+      -webkit-box-shadow: 0 0 25px 0 rgba(0,0,0,0.40);
+      -moz-box-shadow: 0 0 25px 0 rgba(0,0,0,0.40);
+      box-shadow: 0 0 25px 0 rgba(0,0,0,0.40);
+    }
+
+    .row {
+      height: 100%;
+      position: relative;
+      z-index: 10;
+    }
+
+    @media (min-width: 540px) and (min-height: 960px) and (min-resolution: 192dpi) {
+      height: 100%;
+      width: 100%;
+      display: table-cell;
+      vertical-align: middle;
+      position: relative;
+    }
+
+    @media (min-width: $breakpoint-sm) {
+      padding: 3rem;
+    }
+
+    @media (min-width: $breakpoint-xxl) {
+      padding: 3.9375rem;
+    }
+
+    //@media (min-width: $breakpoint-xxxl) {
+    //  padding: 5.9375rem;
+    //}
+
+    @media (max-width: $breakpoint-lg) {
+      [class*='col'] {
+        //margin-bottom: 50px;
+
+        & + [class*='col'] {
+          margin-top: 2.5rem;
+        }
+      }
+    }
+
+    @media (max-width: $breakpoint-sm) {
+      overflow: hidden;
+
+      [class*='col'] {
+        & + [class*='col'] {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+
+  &__text {
+
+    @media (min-width: $breakpoint-lg) {
+      margin: auto;
+      max-width: 445px;
+    }
+
+    @media (min-width: $breakpoint-xl) {
+      max-width: 570px;
+    }
+
+
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 1.35rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    @media (min-width: $breakpoint-sm) {
+      font-size: 1.75rem;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      max-width: 445px;
+      font-size: 1.75rem;
+    }
+
+    @media (min-width: $breakpoint-xl) {
+      max-width: 445px;
+      font-size: 1.75rem;
+    }
+
+    @media (min-width: $breakpoint-xxl) {
+      max-width: 570px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1rem;
+    color: #fff;
+    margin: 35px 0 0;
+    font-weight: 300;
+    line-height: 1.4em;
+
+    @media (min-width: $breakpoint-lg) {
+      max-width: 21rem;
+      font-size: 1.125rem;
+    }
+
+    @media (min-width: $breakpoint-xl) {
+
+
+    }
+
+    @media (min-width: $breakpoint-xxl) {
+      max-width: 390px;
+    }
+  }
+
+}
+
+.visible-min-tablet {
+  display: none;
+
+  @media (min-width: $breakpoint-lg) {
+    display: block;
+  }
+}
+
+.visible-max-tablet {
+  display: none;
+
+  @media (max-width: $breakpoint-lg) {
+    display: block;
+  }
+}
+
+
+.cover__text,
+.cover__text-below {
+  display: none;
+}
+
+body.theme-1 {
+  .cover__text--theme-1 {
+    display: block;
+  }
+}
+
+body.theme-2 {
+  .cover__text--theme-2 {
+    display: block;
+  }
+}
+
+body.theme-3 {
+  .cover__text--theme-3 {
+    display: block;
+  }
+}
+
+body.theme-4 {
+  .cover__text--theme-4 {
+    display: block;
+  }
+}
+
+
+body.theme-1 {
+  .cover__text-below--theme-1 {
+    display: block;
+  }
+}
+
+body.theme-2 {
+  .cover__text-below--theme-2 {
+    display: block;
+  }
+}
+
+body.theme-3 {
+  .cover__text-below--theme-3 {
+    display: block;
+  }
+}
+
+body.theme-4 {
+  .cover__text-below--theme-4 {
+    display: block;
+  }
+}

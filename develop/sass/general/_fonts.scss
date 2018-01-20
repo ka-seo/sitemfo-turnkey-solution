@@ -1,0 +1,66 @@
+@import "../variables";
+
+@if ($font-1 and $font-local-1) {
+  @font-face {
+    font-family: "#{$font-1}";
+    src: url('#{$font-path}/#{$font-1}.eot');
+    src: url('#{$font-path}/#{$font-1}.woff') format('woff'),
+    url('#{$font-path}/#{$font-1}.ttf') format('truetype'),
+    url('#{$font-path}/#{$font-1}.svg##{$font-1}') format('svg'),
+    url('#{$font-path}/#{$font-1}.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@if ($font-2 and $font-local-2) {
+  @font-face {
+    font-family: "#{$font-2}";
+    src: url('#{$font-path}/#{$font-2}.eot');
+    src: url('#{$font-path}/#{$font-2}.woff') format('woff'),
+    url('#{$font-path}/#{$font-2}.ttf') format('truetype'),
+    url('#{$font-path}/#{$font-2}.svg##{$font-2}') format('svg'),
+    url('#{$font-path}/#{$font-2}.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@if ($font-3 and $font-local-3) {
+  @font-face {
+    font-family: "#{$font-3}";
+    src: url('#{$font-path}/#{$font-3}.eot');
+    src: url('#{$font-path}/#{$font-3}.woff') format('woff'),
+    url('#{$font-path}/#{$font-3}.ttf') format('truetype'),
+    url('#{$font-path}/#{$font-3}.svg##{$font-3}') format('svg'),
+    url('#{$font-path}/#{$font-3}.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@if ($font-4 and $font-local-4) {
+  @font-face {
+    font-family: "#{$font-4}";
+    src: url('#{$font-path}/#{$font-4}.eot');
+    src: url('#{$font-path}/#{$font-4}.woff') format('woff'),
+    url('#{$font-path}/#{$font-4}.ttf') format('truetype'),
+    url('#{$font-path}/#{$font-4}.svg##{$font-4}') format('svg'),
+    url('#{$font-path}/#{$font-4}.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@if ($font-5 and $font-local-5) {
+  @font-face {
+    font-family: "#{$font-5}";
+    src: url('#{$font-path}/#{$font-5}.eot');
+    src: url('#{$font-path}/#{$font-5}.woff') format('woff'),
+    url('#{$font-path}/#{$font-5}.ttf') format('truetype'),
+    url('#{$font-path}/#{$font-5}.svg##{$font-5}') format('svg'),
+    url('#{$font-path}/#{$font-5}.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+}

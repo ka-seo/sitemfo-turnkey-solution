@@ -1,0 +1,73 @@
+/* Text Inputs + Textarea
+   ========================================================================== */
+
+/* Style Placeholders */
+
+::placeholder {
+  color: $color-placeholder;
+}
+
+$input-disabled-color: $color-secondary;
+$input-disabled-border: $color-secondary;
+$input-focus-color: $color-primary;
+
+
+/* Text inputs */
+
+input:not([type]),
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search],
+textarea {
+
+  // General Styles
+
+  width: 100%;
+  height: 56px;
+  margin: 0;
+  padding: 16px 12px;
+  font-size: 1rem;
+  line-height: 1rem;
+  outline: none;
+  background-color: #fff;
+  border: 0;
+  @include css3-prefix(box-shadow, 0 0.188rem 0.313rem rgba(0, 0, 0, 0.04));
+  @include border-radius(0.188rem);
+
+  // Disabled input style
+  &:disabled,
+  &[readonly="readonly"] {
+    color: $input-disabled-color;
+    border-color: $input-disabled-border;
+  }
+
+  // Disabled label style
+  &:disabled+label,
+  &[readonly="readonly"]+label {
+    color: $input-disabled-color;
+  }
+
+  // Focused input style
+  &:focus:not([readonly]) {
+    border-color: $input-focus-color;
+  }
+
+  // Focused label style
+  &:focus:not([readonly])+label {
+    color: $input-focus-color;
+  }
+}
+
+textarea {
+  height: auto;
+  min-height: 200px;
+  resize: none;
+}

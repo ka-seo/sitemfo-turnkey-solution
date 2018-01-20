@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Готовое решение - Анкета</title>
+
+	<link rel="stylesheet" href="css/styles.min.css?v=0.46">
+	<link rel="stylesheet" href="theme-1/css/theme-1.min.css?v=0.1" title="theme-1">
+	<!--<link rel="stylesheet" href="theme-2/css/theme-2.min.css?v=0.1" title="theme-2">-->
+	<!--<link rel="stylesheet" href="theme-3/css/theme-3.min.css?v=0.1" title="theme-3">-->
+	<!--<link rel="stylesheet" href="theme-4/css/theme-4.min.css?v=0.1" title="theme-4">-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic" rel="stylesheet">
+</head>
+<body class="dark theme-1">
+
+	<div class="wrapper">
+
+		<!-- HEADER :: start -->
+		<header id="header" class="header">
+
+			<div class="header__left">
+				<!-- LOGO :: start -->
+				<div class="logo">
+					<a href="index.html">
+						<span class="logo__badge">
+							<span class="highlight">Рядом</span>деньги
+						</span>
+					</a>
+				</div>
+				<!-- LOGO :: end -->
+			</div>
+
+
+			<div class="header__right">
+				<!-- NAVMENU :: start -->
+				<nav class="navmenu" id="nav" role="navigation" data-offset="260">
+
+					<ul class="navmenu__list">
+						<li><a href="info.html">Информация</a></li>
+						<li><a href="#modal-passport" class="btn btn-primary popup-modal">Погасить займ</a></li>
+					</ul>
+
+					<div class="navmenu__contacts contacts">
+
+						<div class="contact-item contact-item--address">
+							Москва, <strong>ул. Большая Казачья, д. 12, о. 301</strong>
+							<div class="text-lg-right"><small><a href="info.html#contacts" class=link-dot>ещё 21 адрес в Москве</a></small></div>
+						</div>
+
+						<div class="contact-item contact-item--phone">
+							<a href="tel:8 800 434 33 33">8 800 434 33 33</a>
+						</div>
+					</div>
+
+					<div class="navmenu__footer">
+
+						<div class="svid">
+							ООО МФО «РЯДОМДЕНЬГИ» св-во №001603935007649 от 22.03.2016 г.
+						</div>
+
+						<div class="developer">
+							<div><a href="#poor-vision" class="poor-vision">Версия для слабовидящих</a></div>
+							Сайт разработали <a href="http://sitemfo.ru/" target="_blank" rel="nofollow">Гуру МФО</a>
+						</div>
+					</div>
+
+					<button type="button" class="close-btn" data-menu="nav"></button>
+				</nav>
+				<!-- NAVMENU :: end -->
+
+				<!-- MENU TRIGGER :: start -->
+				<div class="menu-trigger menu-trigger_header" data-menu="nav">
+					<div class="menu-trigger__line"></div>
+					<div class="menu-trigger__line"></div>
+					<div class="menu-trigger__line"></div>
+				</div>
+				<!-- MENU TRIGGER :: end -->
+
+			</div>
+
+		</header>
+		<!-- HEADER :: end -->
+
+		<main role="main" class="wrap">
+			<h1 class="sub-title sub-title--anketa">Для получения займа заполните короткую анкету и мы перезвоним Вам в течение 10 минут</h1>
+
+			<form action="" method="post" id="form" class="form">
+
+				<div class="form__box">
+					<div class="form__title">Личные данные</div>
+
+					<div class="row">
+						<div class="col-12">
+							<div class="form__field">
+								<input type="text" name="lastname" class="form__input" required="">
+								<span class="form__placeholder">ФИО</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-12 col-md-6">
+							<div class="form__field">
+								<input type="tel" name="phone" class="form__input" required="">
+								<span class="form__placeholder">Мобильный телефон</span>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-6">
+							<div class="form__field">
+								<input type="email" name="email" class="form__input" required="">
+								<span class="form__placeholder">Электронная почта</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="form__box">
+					<div class="form__title">Паспортные данные</div>
+
+					<div class="row">
+						<div class="col-sm-12 col-md-6">
+							<div class="form__field">
+								<input name="passport_serial" type="tel" class="form__input" required="">
+								<span class="form__placeholder">Серия и номер паспорта</span>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-6">
+							<div class="form__field">
+								<input type="tel" name="birth" class="form__input calendar" required="">
+								<span class="form__placeholder">Дата рождения</span>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-6">
+							<div class="form__field">
+								<input name="passport_date" type="tel" class="form__input" required="">
+								<span class="form__placeholder">Дата выдачи</span>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-6">
+							<div class="form__field">
+								<input name="subdivision_code" type="tel" class="form__input" required="">
+								<span class="form__placeholder">Код подразделения</span>
+							</div>
+						</div>
+
+						<div class="col-sm-12">
+							<div class="form__field">
+								<input name="passport_issued" type="text" class="form__input" required="">
+								<span class="form__placeholder">Кем выдан</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="form__box">
+					<div class="form__title">Адрес регистрации</div>
+
+					<div class="row">
+						<div class="col-sm-12 col-md-6">
+							<div class="form__field">
+								<input name="region" type="text" class="form__input" required="">
+								<span class="form__placeholder">Регион</span>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-6">
+							<div class="form__field">
+								<input name="city" type="text" class="form__input" required="">
+								<span class="form__placeholder">Город</span>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-6">
+							<div class="form__field">
+								<input name="street" type="text" class="form__input" required="">
+								<span class="form__placeholder">Улица</span>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-6">
+							<div class="row row__three">
+								<div class="col-sm-4">
+									<div class="form__field">
+										<input name="house" type="tel" class="form__input" required="">
+										<span class="form__placeholder">Дом</span>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form__field">
+										<input name="housing" type="tel" class="form__input">
+										<span class="form__placeholder">Строение</span>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form__field">
+										<input name="room" type="tel" class="form__input">
+										<span class="form__placeholder">Квартира</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="form__box">
+					<div class="form__title">Адрес фактического проживания</div>
+
+					<div class="form__field">
+						<input name="sync" id="sync" type="checkbox" class="form__checkbox" checked="" required="">
+						<label for="sync" class="form__check__label">
+							<span class="chbox_cell"><span class="chbox_bd"></span></span>
+							<span class="chbox_cell">Совпадает с адресом регистрации</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__box form__box_dark" id="address-sync" style="display: none;">
+					<div class="form__title">Адрес проживания</div>
+
+					<div class="row">
+						<div class="col-sm-12 col-md-6">
+							<div class="form__field">
+								<input name="region_2" type="text" class="form__input" required="">
+								<span class="form__placeholder">Регион</span>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-6">
+							<div class="form__field">
+								<input name="city_2" type="text" class="form__input" required="">
+								<span class="form__placeholder">Город</span>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-6">
+							<div class="form__field">
+								<input name="street_2" type="text" class="form__input" required="">
+								<span class="form__placeholder">Улица</span>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-6">
+							<div class="row row__three">
+								<div class="col-sm-4">
+									<div class="form__field">
+										<input name="house_2" type="tel" class="form__input" required="">
+										<span class="form__placeholder">Дом</span>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form__field">
+										<input name="housing_2" type="tel" class="form__input">
+										<span class="form__placeholder">Строение</span>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form__field">
+										<input name="room_2" type="tel" class="form__input">
+										<span class="form__placeholder">Квартира</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="form__box form__box--check">
+					<div class="form__field">
+						<input name="agree_1" id="agree_1" type="checkbox" class="form__checkbox" checked="" required="">
+						<label for="agree_1" class="form__check__label">
+							<span class="chbox_cell"><span class="chbox_bd"></span></span>
+							<span class="chbox_cell">Я принимаю <a href="#">Соглашение об использовании Аналога собственноручной подписи</a></span>
+						</label>
+					</div>
+
+					<div class="form__field">
+						<input name="agree_3" id="agree_3" type="checkbox" class="form__checkbox" checked="" required="">
+						<label for="agree_3" class="form__check__label">
+							<span class="chbox_cell"><span class="chbox_bd"></span></span>
+							<span class="chbox_cell">Прошу принять мое <a href="#">Заявление о предоставлении микрозайма</a></span>
+						</label>
+					</div>
+
+					<div class="form__field">
+						<input name="agree_4" id="agree_4" type="checkbox" class="form__checkbox" checked="" required="">
+						<label for="agree_4" class="form__check__label">
+							<span class="chbox_cell"><span class="chbox_bd"></span></span>
+							<span class="chbox_cell">Я даю согласие на <a href="#">обработку моих персональных данных</a></span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__box form__box--act">
+					<div class="form__field text-center">
+						<button type="submit" name="submit_anketa" class="btn btn-primary btn-large">Получить займ</button>
+					</div>
+				</div>
+			</form>
+		</main>
+
+
+		<footer class="footer">
+			<div class="footer__left">
+				ООО МФО «РЯДОМДЕНЬГИ» св-во №001603935007649 от 22.03.2016 г.
+			</div>
+			<div class="footer__right">
+				<a href="#poor-vision" class="poor-vision">Версия для слабовидящих</a>
+				Сайт разработали <a href="http://sitemfo.ru" target="_blank" rel="nofollow">«Гуру МФО»</a>
+			</div>
+		</footer>
+	</div>
+
+	<!-- POPUP PASSPORT :: start -->
+	<div id="modal-passport" class="mpf-popup mpf-popup--small mfp-hide">
+		<div class="popup">
+
+			<p class="font-light text-center">Введите, пожалуйста, свой паспорт и номер договора.</p>
+
+			<form action="#" id="form-passport" class="form-popup form-passport">
+				<div class="form__field">
+					<input name="passport_serial" type="tel" class="popup__input" required="" placeholder="Серия и номер паспорта">
+				</div>
+				<div class="form__field">
+					<input type="text" name="treaty" class="popup__input" required="" placeholder="Номер договора">
+				</div>
+
+				<button class="btn btn-primary">Войти</button>
+			</form>
+		</div>
+	</div>
+	<!-- POPUP PASSPORT:: end -->
+
+
+	<!-- POPUP SMS :: start -->
+	<div id="modal-sms-anketa" class="mpf-popup mpf-popup--small mfp-hide">
+		<div class="popup">
+
+			<p class="font-light text-center">Введите, пожалуйста, СМС-код, который мы отправили на номер <span class="font-regular nowrap insert-phone">+7 917 321 04 84</span></p>
+
+			<form action="#" id="form-sms-anketa" class="form-popup form-sms">
+				<div class="form__field">
+					<div class="form__field form__field--inline text-center">
+						<input type="text" name="sms_code" class="popup__input" placeholder="Код из СМС" autocomplete="off">
+					</div>
+					<span class="timer" id="confirm_timer">00:30</span>
+				</div>
+
+				<button class="btn btn-primary">Подтвердить</button>
+				<div class="text-center" style="margin-top: 10px;"><small><button class="resend_code disabled btn-link" disabled>Отправить код еще раз</button></small></div>
+			</form>
+		</div>
+	</div>
+	<!-- POPUP SMS:: end -->
+
+	<!-- POPUP SUCCESS :: start -->
+	<div id="modal-success" class="mpf-popup mfp-hide">
+		<div class="popup text-center">
+			<div class="popup__icon success"></div>
+
+			<p><strong>Мы уже рассматриваем Вашу анкету!</strong></p>
+			<p class="font-light">Наш менеджер свяжется с Вами в ближайшее время.</p>
+
+			<a href="index.html" class="btn btn-primary">на главную</a>
+		</div>
+	</div>
+	<!-- POPUP SUCCESS:: end -->
+
+	<!-- POPUP SIGN IN :: start -->
+	<div id="modal-sign-in" class="mpf-popup mpf-popup--small mfp-hide">
+		<div class="popup text-center">
+
+			<p class="font-light">Для входа в личный кабинет введите Ваш мобильный телефон</p>
+
+			<form action="#" id="form-sign-in" class="form-popup form-sign">
+				<div class="form__field">
+					<div class="form__field text-center">
+						<input type="tel" name="phone" id="phone_login" class="popup__input" placeholder="номер вашего телефона" required="">
+					</div>
+				</div>
+
+				<button class="btn btn-primary">Войти</button>
+			</form>
+		</div>
+	</div>
+	<!-- POPUP SIGN IN :: end -->
+
+	<!-- POPUP REPAY LOAN :: start -->
+	<div id="modal-repay" class="mpf-popup mpf-popup--small mfp-hide">
+		<div class="popup text-center">
+
+			<p class="font-light">Вы вошли как</p>
+			<p><strong>Иванов Сергей Иванович</strong></p>
+
+			<div class="popup__center">
+				<p class="font-light">К возврату сегодня</p>
+				<p><strong class="repay-sum">6500,<span>00₽</span></strong></p>
+			</div>
+
+			<button class="btn btn-primary">Погасить сейчас</button>
+			<div class="popup__footer">
+				<ul class="list-cards">
+					<li><img src="img/maestro.png" alt=""></li>
+					<li><img src="img/mc.png" alt=""></li>
+					<li><img src="img/mir.png" alt=""></li>
+					<li><img src="img/visa.png" alt=""></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- POPUP REPAY LOAN :: end -->
+
+
+	<!-- Common scripts -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/responsive-menu.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.inputmask.min.js"></script>
+	<script src="js/jquery.countdown.min.js"></script>
+	<script src="js/jquery.lazylinepainter-1.5.1.min.js"></script>
+	<script src="js/rAF-polyfil.min.js"></script>
+	<script src="js/common.min.js?v=0.2"></script>
+
+	<!-- Specific scripts for current page-->
+	<script src="js/anketa.min.js?v=0.2"></script>
+
+</body>
+</html>

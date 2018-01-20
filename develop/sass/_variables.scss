@@ -1,0 +1,89 @@
+/////////////////////////////////////
+// COLORS
+/////////////////////////////////////
+
+//color body text
+$color-base: #1d1d1d;
+
+// additional colors
+$color-primary: #ac6dff;
+$color-secondary: #ffab2f;
+$color-tertiary: $color-base;
+
+$color-body: #fff;
+
+$color-head: $color-base;
+
+$color-link: $color-primary;
+$color-link-hover: lighten($color-link, .2);
+
+$color-placeholder: #989898;
+$color-req: #ec5555;
+$color-error: #F44336;
+$color-success: #4CAF50;
+
+$img: "../img";
+$font-path: "../fonts";
+
+$bodyImage: null;
+$bgRepeat: repeat;
+
+/////////////////////////////////////
+// FONT FAMILY
+/////////////////////////////////////
+
+$font-local-1: false !default;
+$font-local-2: false !default;
+$font-local-3: false !default;
+$font-local-4: false !default;
+$font-local-5: false !default;
+
+$font-1: 'Roboto' !default;
+$font-2: null !default;
+$font-3: null !default;
+$font-4: null !default;
+$font-5: null !default;
+
+$font-primary: $font-1 !default;
+$font-base: $font-primary;
+$font-head: null !default;
+
+$font-spare: null !default;
+$font-strong: null !default;
+
+@if($font-spare) { $font-spare: $font-spare; }
+@if($font-1) { $font-1: $font-1; }
+@if($font-2) { $font-2: $font-2; }
+@if($font-3) { $font-3: $font-3; }
+@if($font-4) { $font-4: $font-4; }
+@if($font-5) { $font-5: $font-5; }
+
+@if($font-spare) {
+  $font-base: $font-primary, $font-spare;
+  $font-head: $font-1, $font-spare;
+  $font-strong: $font-2, $font-spare;
+}
+
+// Font size
+$font-size: 16px;
+
+/////////////////////////////////////
+// HEADINGS
+/////////////////////////////////////
+//$font-primary: 'Arial' !default;
+$heading-h1: 1.75rem;
+$heading-h2: 1.55rem;
+$heading-h3: 1.125rem;
+$heading-h4: 1rem;
+$heading-h5: 1rem;
+$heading-h6: 1rem;
+
+$breakpoint-xxxl: 1600px;
+$breakpoint-xxl: 1400px;
+$breakpoint-xl: 1200px;
+$breakpoint-lg: 992px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 576px;
+
+// Плавное смещение блоков
+$smooth: false !default;

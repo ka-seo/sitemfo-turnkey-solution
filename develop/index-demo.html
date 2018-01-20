@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Готовое решение - Главная</title>
+
+	<link rel="stylesheet" href="css/styles.min.css?v=0.46">
+	<link rel="stylesheet" href="theme-1/css/theme-1.min.css?v=0.1" title="theme-1">
+	<link rel="stylesheet" href="theme-2/css/theme-2.min.css?v=0.1" title="theme-2">
+	<link rel="stylesheet" href="theme-3/css/theme-3.min.css?v=0.1" title="theme-3">
+	<link rel="stylesheet" href="theme-4/css/theme-4.min.css?v=0.1" title="theme-4">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic" rel="stylesheet">
+</head>
+<body class="home theme-1">
+
+	<div class="wrapper">
+
+		<!-- TOP BAR WITH FORM :: start -->
+		<div class="top-bar">
+			<div class="top-bar__text">
+				Хотите такой сайт за <small><strong class="strike"><span>100.000₽</span></strong></small> 49.900 ₽ и 4 дня? Оставьте заявку прямо сейчас!
+			</div>
+			<div class="top-bar__text--mobile">
+				Хочу такой сайт
+			</div>
+			<form action="" id="top-bar-form" class="top-bar__form">
+				<div class="top-bar__form_close">&times;</div>
+				<div class="top-bar__field">
+					<input type="text" name="top_bar_username" class="top-bar__input" placeholder="Ваше имя" required="">
+				</div>
+				<div class="top-bar__field">
+					<input type="tel" name="top_bar_phone" class="top-bar__input" placeholder="Телефон" required="">
+				</div>
+				<div class="top-bar__field">
+					<input type="hidden" name="theme" value="">
+
+					<button class="btn top-bar__button">
+						<span class="default">Хочу сайт МКК</span>
+						<span class="sent" id="sent-1"></span>
+						<span class="loading"><span>.</span><span>.</span><span>.</span></span>
+						<span class="error-send">Ошибка</span>
+					</button>
+					<button class="btn top-bar__button top-bar__button--mobile">
+						<span class="default">Оставить заявку</span>
+						<span class="sent" id="sent-2"></span>
+						<span class="loading"><span>.</span><span>.</span><span>.</span></span>
+						<span class="error-send">Ошибка</span>
+					</button>
+				</div>
+
+			</form>
+		</div>
+		<!-- TOP BAR WITH FORM :: end -->
+
+		<!-- TOP PANEL WITH THEMES :: start-->
+		<div class="top-panel active">
+
+			<div class="top-panel__inner">
+				<div class="top-panel__title">Посмотрите яркие примеры реализации готового решения!</div>
+
+				<div class="top-panel__items themes">
+					<div class="theme-item styleswitch active" rel="theme-1">
+						<div class="theme-item__img">
+							<img src="img/preview-theme-1.jpg" alt="Статусный">
+						</div>
+						<div class="theme-item__title">Статусный</div>
+					</div>
+
+					<div class="theme-item styleswitch" rel="theme-2">
+						<div class="theme-item__img">
+							<img src="img/preview-theme-2.jpg" alt="Беззаботный">
+						</div>
+						<div class="theme-item__title">Беззаботный</div>
+					</div>
+
+					<div class="theme-item styleswitch" rel="theme-3">
+						<div class="theme-item__img">
+							<img src="img/preview-theme-3.jpg" alt="Предсказуемый">
+						</div>
+						<div class="theme-item__title">Предсказуемый</div>
+					</div>
+
+					<div class="theme-item styleswitch" rel="theme-4">
+						<div class="theme-item__img">
+							<img src="img/preview-theme-4.jpg" alt="Бунтарь">
+						</div>
+						<div class="theme-item__title">Бунтарь</div>
+					</div>
+				</div>
+
+				<a href="//sitemfo.ru" class="top-panel__exit">Выйти <br>из демо-режима</a>
+			</div>
+
+			<div class="top-panel__trigger"><span class="icon-theme"></span><span class="text">Свернуть выбор темы</span></div>
+		</div>
+		<!-- TOP PANEL WITH THEMES :: end -->
+
+		<!-- HEADER :: start -->
+		<header id="header" class="header header--home">
+
+			<div class="header__left">
+				<!-- LOGO :: start -->
+				<div class="logo">
+					<a href="index-demo.html">
+						<span class="logo__badge">
+							<span class="highlight">Рядом</span>деньги
+						</span>
+					</a>
+				</div>
+				<!-- LOGO :: end -->
+			</div>
+
+
+			<div class="header__right">
+				<!-- NAVMENU :: start -->
+				<nav class="navmenu" id="nav" role="navigation" data-offset="260">
+
+					<ul class="navmenu__list">
+						<li><a href="info-demo.html">Информация</a></li>
+						<li><a href="#modal-passport" class="btn btn-primary popup-modal">Погасить займ</a></li>
+					</ul>
+
+					<div class="navmenu__contacts contacts">
+
+						<div class="contact-item contact-item--address">
+							Москва, <strong>ул. Большая Казачья, д. 12, о. 301</strong>
+							<div class="text-lg-right"><small><a href="info-demo.html#contacts" class=link-dot>ещё 21 адрес в Москве</a></small></div>
+						</div>
+
+						<div class="contact-item contact-item--phone">
+							<a href="tel:8 800 434 33 33">8 800 434 33 33</a>
+						</div>
+					</div>
+
+					<div class="navmenu__footer">
+
+						<div class="svid">
+							ООО МФО «РЯДОМДЕНЬГИ» св-во №001603935007649 от 22.03.2016 г.
+						</div>
+
+						<div class="developer">
+							Сайт разработали <a href="http://sitemfo.ru/" target="_blank" rel="nofollow">Гуру МФО</a>
+						</div>
+					</div>
+
+					<button type="button" class="close-btn" data-menu="nav"></button>
+				</nav>
+				<!-- NAVMENU :: end -->
+
+				<!-- MENU TRIGGER :: start -->
+				<div class="menu-trigger menu-trigger_header" data-menu="nav">
+					<div class="menu-trigger__line"></div>
+					<div class="menu-trigger__line"></div>
+					<div class="menu-trigger__line"></div>
+				</div>
+				<!-- MENU TRIGGER :: end -->
+
+			</div>
+
+		</header>
+		<!-- HEADER :: end -->
+
+		<div class="cover">
+			<div class="cover__inner">
+				<div class="row align-items-center">
+					<div class="col-lg-6">
+						<!-- TEXT THEME 1 -->
+						<div class="cover__text  cover__text--theme-1">
+							<h1 class="cover__title">Быстрые займы наличными в москве и московской области</h1>
+
+							<div class="cover__subtitle visible-min-tablet">
+								Для микрозайма до 30.000 ₽ под 2% в день Вам нужен только паспорт!
+							</div>
+							<div class="cover__subtitle visible-min-tablet">
+								Займы до 500.000 ₽ под любые нужды залог авто или недвижимости!
+							</div>
+						</div>
+
+						<!-- TEXT THEME 2 -->
+						<div class="cover__text cover__text--theme-2">
+							<h1 class="cover__title">Студенческие займы без процентов!</h1>
+
+							<div class="cover__subtitle visible-min-tablet">
+								* При погашениии менее чем за 5 дней
+							</div>
+						</div>
+
+						<!-- TEXT THEME 3 -->
+						<div class="cover__text cover__text--theme-3">
+							<h1 class="cover__title">Низкая ставка вместо фотографий счастливых людей</h1>
+
+							<div class="cover__subtitle visible-min-tablet">
+								Возьмите займ всего под 0,5% в день!
+							</div>
+						</div>
+
+						<!-- TEXT THEME 4 -->
+						<div class="cover__text cover__text--theme-4">
+							<h1 class="cover__title">Займ, который приносит деньги!</h1>
+
+							<div class="cover__subtitle visible-min-tablet">
+								Получите Cashback 5% с каждого досрочно погашенного займа!
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<!-- TABS :: start -->
+						<div id="tabs-loan" class="tab-container">
+							<ul class="etab">
+								<li class="tab"><a href="#tab-loan-1">Без залога</a></li>
+								<li class="tab"><a href="#tab-loan-2">Под залог</a></li>
+							</ul>
+							<div class="panel-container">
+
+								<!-- TAB LOAN #1 :: start -->
+								<div id="tab-loan-1">
+
+									<!-- calculate :: start -->
+									<div class="calculate">
+										<form method="post" action="anketa-demo.html">
+											<!-- Row 1 -->
+											<div class="calculate__row">
+												<div class="calculate__data">
+													<div class="slider">
+														<input type="text" id="money_range" class="hide" readonly="">
+													</div>
+												</div>
+											</div>
+
+											<!-- Row 2 -->
+											<div class="calculate__row">
+												<div class="calculate__data">
+													<div class="slider">
+														<input id="term_range" class="hide" readonly="" >
+													</div>
+												</div>
+											</div>
+
+											<!-- Row 3 -->
+											<div class="calculate__row last">
+												<div class="calculate__output output">
+													<div class="output-item">
+														<div class="output__title">вы берете</div>
+														<div class="output__value"><span class="loan-sum">0</span>₽</div>
+													</div>
+													<div class="output-item">
+														<div class="output__title">на</div>
+														<div class="output__value"><span class="loan-term">0</span> дн.</div>
+													</div>
+													<div class="output-item">
+														<div class="output__title">ставка</div>
+														<div class="output__value"><span class="loan-percent">0</span>% д.</div>
+													</div>
+													<div class="output-item">
+														<div class="output__title">к возврату</div>
+														<div class="output__value"><span class="loan-back-money">0</span>₽</div>
+													</div>
+													<div class="output-item">
+														<div class="output__title">до</div>
+														<div class="output__value"><span class="loan-back-date">-</span></div>
+													</div>
+												</div>
+											</div>
+
+											<div class="calculate__row last">
+												<button class="btn btn-primary calculate__button">Получить займ</button>
+											</div>
+										</form>
+									</div>
+									<!-- calculate :: end -->
+
+								</div>
+								<!-- TAB LOAN #1 :: end -->
+
+								<!-- TAB LOAN #2 :: start -->
+								<div id="tab-loan-2">
+									<!-- calculate :: start -->
+									<div class="calculate">
+										<form method="post" action="anketa-demo.html">
+											<!-- Row 1 -->
+											<div class="calculate__row">
+												<div class="calculate__data">
+													<div class="slider">
+														<input type="text" id="money_range_on_bail" class="hide" readonly="">
+													</div>
+												</div>
+											</div>
+
+											<!-- Row 2 -->
+											<div class="calculate__row">
+												<div class="calculate__data">
+													<div class="slider">
+														<input id="term_range_on_bail" class="hide" readonly="" >
+													</div>
+												</div>
+											</div>
+
+											<!-- Row 3 -->
+											<div class="calculate__row last">
+												<div class="calculate__output output">
+													<div class="output-item">
+														<div class="output__title">вы берете</div>
+														<div class="output__value"><span class="loan-sum_on-bail">0</span>₽</div>
+													</div>
+													<div class="output-item">
+														<div class="output__title">на</div>
+														<div class="output__value"><span class="loan-term_on-bail">0</span> дн.</div>
+													</div>
+													<div class="output-item">
+														<div class="output__title">ставка</div>
+														<div class="output__value"><span class="loan-percent_on-bail">0</span>% д.</div>
+													</div>
+													<div class="output-item">
+														<div class="output__title">к возврату</div>
+														<div class="output__value"><span class="loan-back-money_on-bail">0</span>₽</div>
+													</div>
+													<div class="output-item">
+														<div class="output__title">до</div>
+														<div class="output__value"><span class="loan-back-date_on-bail">-</span></div>
+													</div>
+												</div>
+											</div>
+
+											<div class="calculate__row last">
+												<button class="btn btn-primary calculate__button">Получить займ</button>
+											</div>
+										</form>
+									</div>
+									<!-- calculate :: end -->
+								</div>
+								<!-- TAB LOAN #2 :: end -->
+							</div>
+						</div>
+						<!-- TABS :: end -->
+					</div>
+
+					<div class="col-12 visible-max-tablet">
+						<!-- TEXT BELOW THEME 1-->
+						<div class="cover__text-below cover__text-below--theme-1">
+							<div class="cover__subtitle">
+								Для микрозайма до 30.000 ₽ под 2% в день Вам нужен только паспорт!
+							</div>
+							<div class="cover__subtitle">
+								Займы до 500.000 ₽ под любые нужды залог авто или недвижимости!
+							</div>
+						</div>
+
+						<!-- TEXT BELOW THEME 2-->
+						<div class="cover__text-below cover__text-below--theme-2">
+							<div class="cover__subtitle">
+								* При погашениии менее чем за 5 дней
+							</div>
+						</div>
+
+						<!-- TEXT BELOW THEME 3-->
+						<div class="cover__text-below cover__text-below--theme-3">
+							<div class="cover__subtitle">
+								Возьмите займ всего под 0,5% в день!
+							</div>
+						</div>
+
+						<!-- TEXT BELOW THEME 4-->
+						<div class="cover__text-below cover__text-below--theme-4">
+							<div class="cover__subtitle">
+								Получите Cashback 5% с каждого досрочно погашенного займа!
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer footer--home">
+			<div class="footer__left">
+				ООО МФО «РЯДОМДЕНЬГИ» св-во №001603935007649 от 22.03.2016 г.
+			</div>
+			<div class="footer__right">
+				Сайт разработали <a href="http://sitemfo.ru" target="_blank" rel="nofollow">«Гуру МФО»</a>
+			</div>
+		</footer>
+	</div><!-- .wrapper -->
+
+	<!-- POPUP PASSPORT :: start -->
+	<div id="modal-passport" class="mpf-popup mpf-popup--small mfp-hide">
+		<div class="popup">
+
+			<p class="font-light text-center">Введите, пожалуйста, свой паспорт и номер договора.</p>
+
+			<form action="#" id="form-passport" class="form-popup form-passport">
+				<div class="form__field">
+					<input name="passport_serial" type="tel" class="popup__input" required="" placeholder="Серия и номер паспорта">
+				</div>
+				<div class="form__field">
+					<input type="text" name="treaty" class="popup__input" required="" placeholder="Номер договора">
+				</div>
+				<button class="btn btn-primary">Войти</button>
+			</form>
+		</div>
+	</div>
+	<!-- POPUP PASSPORT:: end -->
+
+    <!-- POPUP SMS :: start -->
+    <div id="modal-sms" class="mpf-popup mpf-popup--small mfp-hide">
+        <div class="popup">
+
+            <p class="font-light text-center">Введите, пожалуйста, СМС-код, который мы отправили на номер <span class="font-regular nowrap insert-phone">+7 917 321 04 84</span></p>
+
+            <form action="#" id="form-sms" class="form-popup form-sms">
+                <div class="form__field">
+                    <div class="form__field form__field--inline text-center">
+						<input type="text" name="sms_code" class="popup__input" placeholder="Код из СМС" autocomplete="off">
+                    </div>
+                    <span class="timer" id="confirm_timer">00:30</span>
+                </div>
+
+                <button class="btn btn-primary">Подтвердить</button>
+                <div class="text-center" style="margin-top: 10px;"><small><button class="resend_code disabled btn-link" disabled>Отправить код еще раз</button></small></div>
+            </form>
+        </div>
+    </div>
+    <!-- POPUP SMS:: end -->
+
+	<!-- POPUP SIGN IN :: start -->
+	<div id="modal-sign-in" class="mpf-popup mpf-popup--small mfp-hide">
+		<div class="popup text-center">
+
+			<p class="font-light">Для входа в личный кабинет введите Ваш мобильный телефон</p>
+
+			<form action="#" id="form-sign-in" class="form-popup form-sign">
+				<div class="form__field">
+					<div class="form__field text-center">
+						<input type="tel" name="phone" id="phone_login" class="popup__input" placeholder="номер вашего телефона" required="">
+					</div>
+				</div>
+
+				<button class="btn btn-primary">Войти</button>
+			</form>
+		</div>
+	</div>
+	<!-- POPUP SIGN IN :: end -->
+
+	<!-- POPUP REPAY LOAN :: start -->
+	<div id="modal-repay" class="mpf-popup mpf-popup--small mfp-hide">
+		<div class="popup text-center">
+
+			<p class="font-light">Вы вошли как</p>
+			<p><strong>Иванов Сергей Иванович</strong></p>
+
+			<div class="popup__center">
+				<p class="font-light">К возврату сегодня</p>
+				<p><strong class="repay-sum">6500,<span>00₽</span></strong></p>
+			</div>
+
+			<button class="btn btn-primary" onclick="location.href='#lk-demo.html'; alert('Погашено! \nИли редирект на другую страницу.');">Погасить сейчас</button>
+			<div class="popup__footer">
+				<ul class="list-cards">
+					<li><img src="img/maestro.png" alt=""></li>
+					<li><img src="img/mc.png" alt=""></li>
+					<li><img src="img/mir.png" alt=""></li>
+					<li><img src="img/visa.png" alt=""></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- POPUP REPAY LOAN :: end -->
+
+	<!-- Common scripts -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/responsive-menu.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.lazylinepainter-1.5.1.min.js"></script>
+    <script src="js/rAF-polyfil.min.js"></script>
+    <script src="js/common.min.js?v=0.2"></script>
+    <script src="js/styleswitcher.min.js"></script>
+
+	<!-- Specific scripts for current page-->
+	<script src="js/jquery.easytabs.min.js"></script>
+	<script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/home.min.js?v=0.2"></script>
+
+</body>
+</html>
